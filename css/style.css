@@ -1,1 +1,79 @@
 @import url(variables.css);
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: var(--color--one);
+    color: var(--color--five);
+    font-family: sans-serif;
+}
+/*HEADER*/
+.header{
+    width: 100vw;
+    text-align: center;
+    height: 10vh;
+}
+
+.header > h1{
+    text-transform: uppercase;
+}
+
+/*MAIN*/
+/*Seccion 1*/
+.main{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    height: 90vh;
+    padding: 0 4vw;
+}
+
+.main__list{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 6fr 1fr;
+}
+
+.list__checklist{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
+.checklist__item{
+    display: flex;
+    gap: .5vw;
+}
+
+.checklist__item > i{
+    position: relative;
+    top: -.3vw;
+    font-size: 2vw;
+}
+
+.checklist__item__content{
+    display: flex;
+    flex-direction: column;
+    gap: .5vw;
+}
+
+.checklist__item__content p:first-child{
+    color: var(--color--two);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+.checklist__item__text{
+    color: var(--color--seven);
+    text-transform:capitalize;
+}
+
+.checklist__item__special{
+    color: var(--color--five);
+    text-transform:capitalize;
+}
