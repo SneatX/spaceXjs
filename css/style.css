@@ -77,3 +77,38 @@ body{
     color: var(--color--five);
     text-transform:capitalize;
 }
+
+
+
+/*Seccion 3*/
+.main__progressBars{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 6fr 1fr;
+}
+
+.progressBars__item__info{
+    height: auto;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.info__bar{
+    background-color: var(--color--seven);
+    width: 70%;
+    height: 10px;
+    border-radius: 100px;
+}
+
+.bar{
+    background-color: var(--color--three);
+    height: 10px;
+    border-radius: 100px;
+}
+
+.info__text{
+    width: 30%;
+    text-align: center;
+}
