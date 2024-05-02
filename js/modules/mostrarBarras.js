@@ -18,13 +18,13 @@ export const mostrarBarras = async(value) =>{
     let masaMax = hallarMaximo(masas)
 
     document.querySelector(".progressBars__allItems").innerHTML = ""
-    insertarBarra(cohete.height.meters, alturaMax, "Height")
-    insertarBarra(cohete.diameter.meters, diametroMax, "Diameter")
-    insertarBarra(cohete.mass.kg, masaMax, "Mass")
+    insertarBarra(cohete.height.meters, alturaMax, "Height", "m")
+    insertarBarra(cohete.diameter.meters, diametroMax, "Diameter", "m")
+    insertarBarra(cohete.mass.kg, masaMax, "Mass", "kg")
 
 }
 
-function insertarBarra(valor, valorMax, titulo){
+function insertarBarra(valor, valorMax, titulo, unidad){
     let porcentaje = (valor / valorMax) * 100
 
     let divContenedor = document.createElement("section")
@@ -43,9 +43,15 @@ function insertarBarra(valor, valorMax, titulo){
     let divInterno = document.createElement("div")
     divInterno.classList.add("bar")
     divInterno.style.width = `${porcentaje}%`
+
+    let divInternoTexto = document.createElement("div")
+    divInternoTexto.classList.add("info__text")
+    divInternoTexto.innerHTML = `<p>${valor} ${unidad}</p>`
+
     
     divExterno.appendChild(divInterno)
     divBarraProgreso.appendChild(divExterno)
+    divBarraProgreso.appendChild(divInternoTexto)
     divContenedor.appendChild(divBarraProgreso)
     document.querySelector(".progressBars__allItems").appendChild(divContenedor)
 }
