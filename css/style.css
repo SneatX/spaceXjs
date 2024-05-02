@@ -112,6 +112,16 @@ body{
 }
 
 
+/*Seccion 2*/
+
+.main__content{
+
+}
+
+.content__box1{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+}
 
 /*Seccion 3*/
 .main__progressBars{
