@@ -6,22 +6,29 @@ export const mostrarBarras = async(value) =>{
     let alturas = []
     let diametros = []
     let masas = []
+    let costsPerLaunchs = []
+    let successRate = []
 
     for(let rocket of data){
         alturas.push(rocket.height.meters)
         diametros.push(rocket.diameter.meters)
         masas.push(rocket.mass.kg)
+        costsPerLaunchs.push(rocket.cost_per_launch)
+        successRate.push(rocket.success_rate_pct)
     }
     
     let alturaMax = hallarMaximo(alturas)
     let diametroMax = hallarMaximo(diametros)
     let masaMax = hallarMaximo(masas)
+    let costoMaximo = hallarMaximo(costsPerLaunchs)
+    let exitoMaximo = hallarMaximo(successRate)
 
     document.querySelector(".progressBars__allItems").innerHTML = ""
     insertarBarra(cohete.height.meters, alturaMax, "Height", "m")
     insertarBarra(cohete.diameter.meters, diametroMax, "Diameter", "m")
     insertarBarra(cohete.mass.kg, masaMax, "Mass", "kg")
-
+    insertarBarra(cohete.cost_per_launch, costoMaximo, "Cost per launch", "$")
+    insertarBarra(cohete.success_rate_pct, exitoMaximo, "Success rate", "%")
 }
 
 function insertarBarra(valor, valorMax, titulo, unidad){
