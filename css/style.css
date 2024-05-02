@@ -78,6 +78,39 @@ body{
     text-transform:capitalize;
 }
 
+.buttons__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+}
+
+.buttons__container > *{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .9vw;
+}
+
+
+.buttons__container :first-child{
+    background-color: var(--color--five);
+    height: 100%;
+    border: 0;
+    border-radius: 7px;
+    width: 40%;
+}
+
+.buttons__container :last-child{
+    background-color: var(--color--one);
+    color: var(--color--five);
+    height: 70%;
+    outline : 1px solid var(--color--five);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    width: 35%;
+
+}
+
 
 
 /*Seccion 3*/
@@ -85,6 +118,12 @@ body{
     height: 100%;
     display: grid;
     grid-template-rows: 6fr 1fr;
+}
+
+.progressBars__allItems{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
 }
 
 .progressBars__item__info{
@@ -111,4 +150,27 @@ body{
 .info__text{
     width: 30%;
     text-align: center;
+}
+
+.progressBars__select{
+    display: flex;
+    justify-content: center;
+}
+
+#selectRocket{
+    height: 50%;
+    border: 1px solid var(--color--five);
+    border-radius: 10px;
+    color: white;
+    background-color: var(--color--one);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: .9vw;
+
+}
+
+#selectRocket > *{
+    font-family: sans-serif;
+    text-transform: capitalize;
 }
