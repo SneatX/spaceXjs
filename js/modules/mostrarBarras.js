@@ -3,12 +3,12 @@ import{
     getRocketHeightMaxInM,
     getRocketDiameterMaxInM,
     getCostPerLaunchMax
-} from "./hallarMaximos.js"
-
+} from "./services/hallarMaximos.js"
 import{ insertarBarra } from "./ui/insertarBarra.js"
+import{ getRocketById } from "./services/apiService.js"
 
 export const mostrarBarras = async(id) =>{
-    let cohete = await(await fetch(`https://api.spacexdata.com/v4/rockets/${id}`)).json()
+    let cohete = await getRocketById(id)
     
     let heightMax = await getRocketHeightMaxInM()
     let diameterMax = await getRocketDiameterMaxInM()

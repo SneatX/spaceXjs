@@ -28,4 +28,20 @@ export const insertarBarra =(valor, valorMax, titulo, unidad) => {
     divBarraProgreso.appendChild(divInternoTexto)
     divContenedor.appendChild(divBarraProgreso)
     document.querySelector(".progressBars__allItems").appendChild(divContenedor)
+
+    /*
+    <section class="progressBars__item">
+        <div class="progressBars__item__title">
+            <h1>Inetial Velocity</h1>
+        </div>
+        <div class="progressBars__item__info">
+            <div class="info__bar">
+                <div class="bar" style="width: 50%;"></div>
+            </div>
+            <div class="info__text">
+                <p></p>
+            </div>
+        </div>
+    </section>
+    */
 }
