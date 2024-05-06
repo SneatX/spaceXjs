@@ -115,13 +115,44 @@ body{
 /*Seccion 2*/
 
 .main__content{
-
+    height: 90vh;
 }
 
 .content__box1{
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
+    height: 10vw;
+    padding: 0 1vw;
 }
+
+.box1__item{
+    display: flex;
+    justify-content: center;
+}
+.circleBar__text{
+    transform: rotate(180deg); 
+
+}
+
+
+.item__circleBar {
+    color: var(--color--five);
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    background: radial-gradient(
+        closest-side, 
+        var(--color--one) 85%, 
+        transparent 85% 100%), 
+        conic-gradient(var(--color--three) 
+        80%, 
+        transparent 0);  
+    transform: rotate(180deg); 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 /*Seccion 3*/
 .main__progressBars{
