@@ -119,21 +119,26 @@ body{
 }
 
 .content__box1{
-    display: grid;
-    grid-template-columns: repeat(4 ,1fr);
+    display: none;
+    grid-template-columns: repeat(2 ,1fr);
     height: 10vw;
     padding: 0 1vw;
 }
 
-.box1__item{
+.stage1__title , .stage2__title{
+    text-align: center;
+}
+
+.stage1__graphic, .stage2__graphic{
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.stage__item{
     display: flex;
     justify-content: center;
 }
-.circleBar__text{
-    transform: rotate(180deg); 
-
-}
-
 
 .item__circleBar {
     color: var(--color--five);
@@ -152,7 +157,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
+
+.circleBar__text{
+    transform: rotate(180deg); 
+    text-align: center;
+    padding: 0 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5vw;
+}
 
 /*Seccion 3*/
 .main__progressBars{
