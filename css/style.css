@@ -121,7 +121,6 @@ body{
 .content__box1{
     display: none;
     grid-template-columns: repeat(2 ,1fr);
-    height: 10vw;
     padding: 0 1vw;
 }
 
@@ -168,6 +167,25 @@ body{
     align-items: center;
     justify-content: center;
     gap: .5vw;
+}
+
+.content__box2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+}
+
+.box2__imgDiv{
+    width: 60%;
+    height: 80%;
+    display: flex;
+    overflow-x: auto;
+}
+
+.box2__imgDiv img{
+    width: 100%;
 }
 
 /*Seccion 3*/
