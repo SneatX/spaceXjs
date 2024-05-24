@@ -1,123 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SpaceX</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    <header class="header">
-        <h1 id="header__title"></h1>
-    </header>
-    <main class="main">
-        <article class="main__list">
-            <ul class="list__checklist">
-                <!-- <li class="checklist__item">
-                    <i class='bx bxs-check-circle' style='color:#9499c3'></i>
-                    <div class="checklist__item__content">
-                        <p>all systems check</p>
-                        <p class="checklist__item__text">normal</p>
-                    </div>
-                </li> -->
-            </ul>
+	<header class="header">
+		<h1 id="header__title"></h1>
+	</header>
+	<main class="main">
+		<article class="main__list">
+			<ul class="list__checklist">
+				<!--Items de la lista lateral-->
+			</ul>
+			<section class="list__buttons">
+				<div class="buttons__container">
+					<select class="seleccionApi">
+						<option value="">Seleccione</option>
+						<option value="0">Rockets</option>
+					</select>
+				</div>
+			</section>
+		</article>
 
-            <section class="list__buttons">
-                <div class="buttons__container">
-                    <button>systems</button>
-                    <button>cabin</button>
-                </div>
-            </section>
+		<article class="main__content">
+			<section class="content__box1">
 
-        </article>
+				<div class="box1__stage1">
+					<div class="stage1__title">
+						<h2>Stage 1</h2>
+					</div>
+					<div class="stage1__graphic">
+						<!--Grafico 1-->
+					</div>
+				</div>
 
-        <article class="main__content">
-            <section class="content__box1">
+				<div class="box1__stage2">
+					<div class="stage2__title">
+						<h2>Stage 2</h2>
+					</div>
+					<div class="stage2__graphic">
+						<!--Grafico 2-->
+					</div>
+				</div>
+			</section>
+			<section class="content__box2">
+				<div class="box2__imgDiv">
+					<!-- <img src="https://imgur.com/DaCfMsj.jpg" alt=""> -->
+				</div>
+			</section>
+		</article>
 
-                <div class="box1__stage1">
-                    <div class="stage1__title">
-                        <h2>Stage 1</h2>
-                    </div>
-                    <div class="stage1__graphic">
-                        <!-- <div>
-                            <div class="item__circleBar">
-                                <div class="circleBar__text"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="item__circleBar">
-                                <div class="circleBar__text"></div>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-
-
-                <div class="box1__stage2">
-                    <div class="stage2__title">
-                        <h2>Stage 2</h2>
-                    </div>
-                    <div class="stage2__graphic">
-                        <!-- <div>
-                            <div class="item__circleBar">
-                                <div class="circleBar__text"></div>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="item__circleBar">
-                                <div class="circleBar__text"></div>
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-            </section>
-            <section class="content__box2">
-                <div class="box2__imgDiv">
-                    <!-- <img src="https://imgur.com/DaCfMsj.jpg" alt=""> -->
-                </div>
-            </section>
-        </article>
-
-        <article class="main__progressBars">
-            <section class="progressBars__allItems">
-                <!--
-                <section class="progressBars__item">
-                    <div class="progressBars__item__title">
-                        <h1>Inetial Velocity</h1>
-                    </div>
-                    <div class="progressBars__item__info">
-                        <div class="info__bar">
-                            <div class="bar" style="width: 50%;"></div>
-                        </div>
-                        <div class="info__text">
-                            <p></p>
-                        </div>
-                    </div>
-                </section>
-                -->
-            </section>
-
-            <section class="progressBars__select">
-                <select id="selectRocket">
-                    <option value="">Select</option>
-                </select>
-            </section>
-        </article>
-    </main>
-
-
-    <!-- Check icons
-    Nav icons
-    <img src="storage/iconos/rocket.svg">
-    <i class='bx bx-body' style='color:#e72d2d'></i>
-    <img src="storage/iconos/comms.svg">
-    <img src="storage/iconos/prop.svg">
-    <img src="storage/iconos/mech.svg">
-    <i class='bx bxs-battery-charging bx-rotate-270' style='color:#ffffff'  ></i>
-    <i class='bx bxs-chip' style='color:#ffffff'  ></i>
-    <i class='bx bx-current-location bx-rotate-270' style='color:#ffffff'  ></i>
-    <i class='bx bxs-brightness-half' style="color: #fff"></i> -->
-    <script src="js/main.js" type="module"></script>
+		<article class="main__progressBars">
+			<section class="progressBars__allItems">
+				<!--Barras de progreso-->
+			</section>
+			
+			<section class="progressBars__select">
+				<select id="selectRocket">
+					<option value="">Select</option>
+				</select>
+			</section>
+		</article>
+	</main>
+	<script src="js/main.js" type="module"></script>
 </body>
+
 </html>

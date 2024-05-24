@@ -92,24 +92,15 @@ body{
 }
 
 
-.buttons__container :first-child{
+.buttons__container .seleccionApi{
     background-color: var(--color--five);
     height: 100%;
     border: 0;
     border-radius: 7px;
     width: 40%;
+    text-align: center;
 }
 
-.buttons__container :last-child{
-    background-color: var(--color--one);
-    color: var(--color--five);
-    height: 70%;
-    outline : 1px solid var(--color--five);
-    border-top-right-radius: 7px;
-    border-bottom-right-radius: 7px;
-    width: 35%;
-
-}
 
 
 /*Seccion 2*/
