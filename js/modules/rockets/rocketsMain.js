@@ -7,7 +7,8 @@ import { mostrarImagenesCohete } from "./ui/insertarImagenes.js"
 
 export async function mostrarCohetes() {
     mostrarOpcionesCohete()
-    document.getElementById("selectRocket").addEventListener("change", async (event) => {
+    let selectRocket = document.getElementById("selectRocket")
+    selectRocket.addEventListener("change", async (event) => {
         if (selectRocket.value === '') {
             document.querySelector(".progressBars__allItems").innerHTML = ''
             document.querySelector(".list__checklist").innerHTML = ''
