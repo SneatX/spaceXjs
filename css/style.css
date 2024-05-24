@@ -223,7 +223,7 @@ body{
     justify-content: center;
 }
 
-#selectRocket{
+#selector{
     height: 50%;
     border: 1px solid var(--color--five);
     border-radius: 10px;
@@ -236,7 +236,7 @@ body{
 
 }
 
-#selectRocket > *{
+#selector > *{
     font-family: sans-serif;
     text-transform: capitalize;
 }

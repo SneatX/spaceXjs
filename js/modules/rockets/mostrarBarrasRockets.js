@@ -7,7 +7,7 @@ import{
 import{ insertarBarra } from "./ui/insertarBarra.js"
 import{ getRocketById } from "./services/apiService.js"
 
-export const mostrarBarras = async(id) =>{
+export const mostrarBarrasRockets = async(id) =>{
     let cohete = await getRocketById(id)
     
     let heightMax = await getRocketHeightMaxInM()

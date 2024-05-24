@@ -1,4 +1,4 @@
-export const insertarBarra =(valor, valorMax, titulo, unidad) => {
+export const insertarBarraStarlink =(valor, valorMax, titulo, unidad) => {
     let porcentaje = (valor / valorMax) * 100
 
     let divContenedor = document.createElement("section")

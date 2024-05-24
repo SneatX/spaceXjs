@@ -1,9 +1,8 @@
 import { getStarlinkById } from "./services/apiService.js"
-import{ insertarBarra } from "./ui/insertarBarra.js"
+import{ insertarBarraStarlink } from "./ui/insertarBarra.js"
 
 export const mostrarBarrasStarlink = async(id) =>{
     document.querySelector(".progressBars__allItems").innerHTML = ""
-    console.log("impresion")
     let {
         spaceTrack:{
             MEAN_MOTION,
@@ -13,10 +12,10 @@ export const mostrarBarrasStarlink = async(id) =>{
         }
     } = await getStarlinkById(id)
 
-    insertarBarra(MEAN_MOTION, 39, "Mean motion", "u")
-    insertarBarra(APOAPSIS, 200, "Apoasis", "u")
-    insertarBarra(INCLINATION, 120,"Inclination", "°")
-    insertarBarra(ARG_OF_PERICENTER, 300, "Arg of pericenter", "u")
+    insertarBarraStarlink(MEAN_MOTION, 39, "Mean motion", "u")
+    insertarBarraStarlink(APOAPSIS, 200, "Apoasis", "u")
+    insertarBarraStarlink(INCLINATION, 120,"Inclination", "°")
+    insertarBarraStarlink(ARG_OF_PERICENTER, 300, "Arg of pericenter", "u")
 }
 
 

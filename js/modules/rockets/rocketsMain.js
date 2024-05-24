@@ -1,4 +1,4 @@
-import { mostrarBarras } from "./mostrarBarras.js"
+import { mostrarBarrasRockets } from "./mostrarBarrasRockets.js"
 import { mostrarOpcionesCohete } from "./ui/opcionesCohete.js"
 import { mostrarInfo } from "./mostrarInfo.js"
 import { mostrarTitulo } from "./ui/insertarTitulo.js"
@@ -16,7 +16,7 @@ export async function mostrarCohetes() {
             document.querySelector(".content__box1").style.display = "none"
             document.querySelector(".box2__imgDiv").innerHTML = ""
         } else {
-            await mostrarBarras(selectRocket.value)
+            await mostrarBarrasRockets(selectRocket.value)
             await mostrarInfo(selectRocket.value)
             await mostrarTitulo(selectRocket.value)
             await mostrarGraficos(selectRocket.value)

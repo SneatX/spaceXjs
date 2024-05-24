@@ -5,8 +5,10 @@ import { mostrarTitulo } from "./ui/insertarTitulo.js";
 
 export async function mostrarStarlink(){
     mostrarOpcionesStarlink()
-    let selectStarlink = document.getElementById("selectRocket")
+    let selectStarlink = document.getElementById("selectStarlink")
     selectStarlink.addEventListener("change", async (event) => {
+        event.preventDefault()
+        event.stopImmediatePropagation()
         if (selectStarlink.value === '') {
             document.querySelector(".progressBars__allItems").innerHTML = ''
             document.querySelector(".list__checklist").innerHTML = ''
@@ -15,8 +17,8 @@ export async function mostrarStarlink(){
             document.querySelector(".box2__imgDiv").innerHTML = ""
         } else {
             await mostrarBarrasStarlink(selectStarlink.value)
-            await mostrarInfo(selectRocket.value)
-            await mostrarTitulo(selectRocket.value)
+            await mostrarInfo(selectStarlink.value)
+            await mostrarTitulo(selectStarlink.value)
         }
     })
 }
